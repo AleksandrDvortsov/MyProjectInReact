@@ -1,0 +1,37 @@
+#conteinerISS {
+  display: flex;
+  margin-top: 25px;
+}
+
+#map {
+  position: relative;
+
+  border: 2px solid red;
+  border-right: none;
+  width: 85%;
+  height: 70vh;
+}
+
+#infoISS {
+  border: 2px solid red;
+
+  width: 15%;
+  height: 70vh;
+  background: #404040;
+
+  h3, h4{
+    text-align: center;
+  }
+  p{
+    width: 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    border: 1px solid red;
+  }
+  p:hover{
+    background: red;
+  }
+}

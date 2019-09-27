@@ -1,0 +1,130 @@
+#Projects {
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+}
+
+.tilesWrap {
+  padding: 0;
+  margin: 20px auto;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.tilesWrap li {
+  min-width: 200px;
+  max-width: 230px;
+  padding: 80px 20px 40px;
+  position: relative;
+  margin: 10px;
+  background: #404040;
+  border: 1px solid #404040;
+  text-align: left;
+  color: white;
+
+}
+.tilesWrap li h2 {
+  font-size: 100px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.3;
+  top: 30px;
+  right: 10px;
+  transition: all 0.9s ease-in-out;
+}
+.tilesWrap li h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.tilesWrap li p {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+#navlink-1,
+#navlink-2, #navlink-3, #navlink-4 {
+  position: absolute;
+  bottom: 25px;
+
+  border: 2px solid white;
+  border-image-source: linear-gradient(to right, rgb(191, 10, 10), rgb(126, 252, 53));
+  border-image-slice: 1;
+  background-clip: content-box, border-box;
+
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.9s ease-in-out;
+  transform: translateY(-25px);
+  opacity: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+#navlink-2 {
+  border-image-source: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+}
+#navlink-3 {
+  border-image-source: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+}
+#navlink-4 {
+  border-image-source: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+}
+
+.tilesWrap li:hover #navlink-1,
+.tilesWrap li:hover #navlink-2,
+.tilesWrap li:hover #navlink-3,
+.tilesWrap li:hover #navlink-4 {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#navlink-1:hover {
+  background: linear-gradient(to right, rgb(191, 10, 10), rgb(199, 252, 53));
+}
+#navlink-2:hover {
+  background: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+}
+#navlink-3:hover {
+  background: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+}
+#navlink-4:hover {
+  background: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+}
+
+.tilesWrap li:hover h2 {
+  top: 0px;
+  opacity: 1;
+}
+
+.li-1:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(-1.5deg, -1.5deg);
+}
+.li-2:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transform: skew(1.5deg, 1.5deg);
+}
+
+.tilesWrap li:nth-child(1):before {
+  background: linear-gradient(to right, rgb(191, 10, 10), rgb(199, 252, 53));
+}
+.tilesWrap li:nth-child(2):before {
+  background: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+}
+.tilesWrap li:nth-child(3):before {
+  background: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+}
+.tilesWrap li:nth-child(4):before {
+  background: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+}
