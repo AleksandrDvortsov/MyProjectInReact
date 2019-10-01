@@ -5,7 +5,8 @@ function AboutMe() {
 
     return (
         <div id = 'aboutMe'>
-            <h2>About me</h2>
+            <h2>Add content soon</h2>
+            <h3>(About me)</h3>
         </div>
     )
 }

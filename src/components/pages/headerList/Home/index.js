@@ -5,7 +5,8 @@ function Home() {
 
     return (
         <div id = 'home'>
-            <h2>Home</h2>
+            <h2>Add content soon</h2>
+            <h3>(Home)</h3>
         </div>
     )
 }

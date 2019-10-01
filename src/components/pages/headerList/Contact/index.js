@@ -5,7 +5,8 @@ function Contact() {
 
     return (
         <div id = 'contact'>
-            <h2>Contact</h2>
+            <h2>Add content soon</h2>
+            <h3>(Contact)</h3>
         </div>
     )
 }

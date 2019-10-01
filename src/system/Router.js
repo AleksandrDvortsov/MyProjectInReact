@@ -6,6 +6,7 @@ import Contact from '../components/pages/headerList/Contact'
 import AboutMe from '../components/pages/headerList/AboutMe'
 import PositionISS from '../components/pages/headerList/Projects/components/PositionISS';
 import Weather from '../components/pages/headerList/Projects/components/Weather';
+import PsdMaket from '../components/pages/headerList/Projects/components/PsdMaket';
 
 function Router(props) {
 
@@ -17,6 +18,7 @@ function Router(props) {
             <Route path="/contact" component={Contact} />
             <Route path="/project/iss" component={PositionISS} />
             <Route path="/project/weather" component={Weather} />
+            <Route path="/project/psdMaket" component={PsdMaket} />
         </Switch>
     )
 }

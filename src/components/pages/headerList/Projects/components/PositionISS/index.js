@@ -26,7 +26,7 @@ function PositionISS(props) {
             updatePosition();
         }, TIME_UPDATE_POSITION_ISS)
 
-    }, []);
+    },[] );
 
     function updatePosition() {
         getApiPosISS().then((data) => {

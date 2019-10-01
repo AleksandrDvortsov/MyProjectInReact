@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import './style.scss';
 import { getApiWeatherFoCityName } from './service';
@@ -11,7 +11,6 @@ function Weather(props) {
         isWeather,
         setWeather,
         weatherInfo,
-        city_name
     } = props;
 
     const urlImg = 'https://www.weatherbit.io/static/img/icons/';
@@ -48,7 +47,7 @@ function Weather(props) {
             <div className="search">
                 <input type="text" className="searchTerm" placeholder="поиск - через запятую можно уточнить страну(пример: город,страна)" onKeyDown={poisk}></input>
                 <button type="submit" className="searchButton" onClick={poisk}>
-                    <img src={img} />
+                    <img src={img} alt='' />
                 </button>
             </div>
             {
@@ -62,7 +61,7 @@ function Weather(props) {
 
                         <div>
                             {isWeather ? <p>{weatherInfo.temp}°C</p> : null}
-                            {isWeather ? <img src={urlImg + weatherInfo.weather.icon + png} /> : null}
+                            {isWeather ? <img src={urlImg + weatherInfo.weather.icon + png} alt='' /> : null}
                         </div>
 
                         {isWeather ? <p>Ветер: {weatherInfo.wind_spd.toFixed(1)}м/с</p> : null}

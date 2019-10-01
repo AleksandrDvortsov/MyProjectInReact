@@ -43,12 +43,12 @@
   margin-bottom: 40px;
 }
 #navlink-1,
-#navlink-2, #navlink-3, #navlink-4 {
+#navlink-2, #navlink-3, #navlink-4, #navlink-5 {
   position: absolute;
   bottom: 25px;
 
   border: 2px solid white;
-  border-image-source: linear-gradient(to right, rgb(191, 10, 10), rgb(126, 252, 53));
+  border-image-source: linear-gradient(to right, rgb(191, 10, 10), rgb(249, 252, 53));
   border-image-slice: 1;
   background-clip: content-box, border-box;
 
@@ -61,33 +61,40 @@
   text-decoration: none;
 }
 #navlink-2 {
-  border-image-source: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+  border-image-source: linear-gradient(to right, rgb(249, 252, 53), rgb(10, 191, 19));
 }
 #navlink-3 {
-  border-image-source: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+  border-image-source: linear-gradient(to right, rgb(10, 191, 19), rgb(10, 149, 191));
 }
 #navlink-4 {
-  border-image-source: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+  border-image-source: linear-gradient(to right, rgb(10, 149, 191), rgb(37, 10, 191));
+}
+#navlink-5 {
+  border-image-source: linear-gradient(to right, rgb(37, 10, 191), rgb(191, 10, 176));
 }
 
 .tilesWrap li:hover #navlink-1,
 .tilesWrap li:hover #navlink-2,
 .tilesWrap li:hover #navlink-3,
-.tilesWrap li:hover #navlink-4 {
+.tilesWrap li:hover #navlink-4,
+.tilesWrap li:hover #navlink-5 {
   transform: translateY(0px);
   opacity: 1;
 }
 #navlink-1:hover {
-  background: linear-gradient(to right, rgb(191, 10, 10), rgb(199, 252, 53));
+  background: linear-gradient(to right, rgb(191, 10, 10), rgb(249, 252, 53));
 }
 #navlink-2:hover {
-  background: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+  background: linear-gradient(to right, rgb(249, 252, 53), rgb(10, 191, 19));
 }
 #navlink-3:hover {
-  background: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+  background: linear-gradient(to right, rgb(10, 191, 19), rgb(10, 149, 191));
 }
 #navlink-4:hover {
-  background: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+  background: linear-gradient(to right, rgb(10, 149, 191), rgb(37, 10, 191));
+}
+#navlink-5:hover {
+  background: linear-gradient(to right, rgb(37, 10, 191), rgb(191, 10, 176));
 }
 
 .tilesWrap li:hover h2 {
@@ -117,14 +124,18 @@
 }
 
 .tilesWrap li:nth-child(1):before {
-  background: linear-gradient(to right, rgb(191, 10, 10), rgb(199, 252, 53));
+  background: linear-gradient(to right, rgb(191, 10, 10), rgb(249, 252, 53));
 }
 .tilesWrap li:nth-child(2):before {
-  background: linear-gradient(to right, rgb(199, 252, 53), rgb(10, 164, 191));
+  background: linear-gradient(to right, rgb(249, 252, 53), rgb(10, 191, 19));
 }
 .tilesWrap li:nth-child(3):before {
-  background: linear-gradient(to right, rgb(10, 164, 191), rgb(140, 10, 191));
+  background: linear-gradient(to right, rgb(10, 191, 19), rgb(10, 149, 191));
 }
 .tilesWrap li:nth-child(4):before {
-  background: linear-gradient(to right, rgb(140, 10, 191), rgb(191, 10, 10));
+  background: linear-gradient(to right, rgb(10, 149, 191), rgb(37, 10, 191));
 }
+.tilesWrap li:nth-child(5):before {
+  background: linear-gradient(to right, rgb(37, 10, 191), rgb(191, 10, 176));
+}
+

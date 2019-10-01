@@ -9,11 +9,6 @@ function Projects() {
         <div id="Projects">
 
             <div className="page">
-                {/* <h2>Projects</h2> */}
-                {/* <ul id="menu_Project"> */}
-                {/* <li><NavLink to="/project/iss">ISS</NavLink></li> */}
-                {/* <li><NavLink to="/project/weather">Weather</NavLink></li> */}
-                {/* </ul> */}
                 <ul className="tilesWrap">
                     <li className='li-1'>
                         <h2>1</h2>
@@ -31,17 +26,27 @@ function Projects() {
 
                     <li className='li-1'>
                         <h2>3</h2>
-                        <h3>xz</h3>
-                        <p>The application displays the weather. Request by api on weatherbit.</p>
-                        {/* <NavLink id='navlink-3' to="/project/weather">View application</NavLink> */}
+                        <h3>Psd Maket</h3>
+                        <p>Заметка <br/>зделать ссылку на гит и расписать про макет</p>
+                        <NavLink id='navlink-3' to="/project/psdMaket">View application</NavLink>
                     </li>
 
                     <li className='li-2'>
                         <h2>4</h2>
-                        <h3>xz</h3>
-                        <p>The application displays the weather. Request by api on weatherbit.</p>
+                        <h3>Site with <br/> pictures</h3>
+                        <p>update soon</p>
                         {/* <NavLink id='navlink-4' to="/project/weather">View application</NavLink> */}
                     </li>
+
+                    <li className='li-2'>
+                        <h2>5</h2>
+                        <h3>Playable</h3>
+                        <p>Game</p>
+                        <p>update soon</p>
+                        {/* <NavLink id='navlink-5' to="/project/weather">View application</NavLink> */}
+                    </li>
+
+                    
 
                 </ul>
             </div>
